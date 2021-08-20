@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		BC8970D526CD680D00EC5446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8970D426CD680D00EC5446 /* AppDelegate.swift */; };
-		BC8970D726CD680D00EC5446 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8970D626CD680D00EC5446 /* SceneDelegate.swift */; };
-		BC8970D926CD680D00EC5446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8970D826CD680D00EC5446 /* ViewController.swift */; };
+		BC8970D926CD680D00EC5446 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8970D826CD680D00EC5446 /* InfoViewController.swift */; };
 		BC8970DC26CD680D00EC5446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8970DA26CD680D00EC5446 /* Main.storyboard */; };
 		BC8970DE26CD681000EC5446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8970DD26CD681000EC5446 /* Assets.xcassets */; };
 		BC8970E126CD681000EC5446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8970DF26CD681000EC5446 /* LaunchScreen.storyboard */; };
+		BC8970E926CFB17300EC5446 /* HabitsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8970E826CFB17300EC5446 /* HabitsStore.swift */; };
+		BC8970EB26CFB96A00EC5446 /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8970EA26CFB96A00EC5446 /* HabitsViewController.swift */; };
+		BC8970ED26CFC63700EC5446 /* HabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8970EC26CFC63700EC5446 /* HabitViewController.swift */; };
+		BC8970EF26CFD0EB00EC5446 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8970EE26CFD0EB00EC5446 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC8970D126CD680D00EC5446 /* MyHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8970D426CD680D00EC5446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC8970D626CD680D00EC5446 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC8970D826CD680D00EC5446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC8970D826CD680D00EC5446 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		BC8970DB26CD680D00EC5446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC8970DD26CD681000EC5446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8970E026CD681000EC5446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8970E226CD681000EC5446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8970E826CFB17300EC5446 /* HabitsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsStore.swift; sourceTree = "<group>"; };
+		BC8970EA26CFB96A00EC5446 /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
+		BC8970EC26CFC63700EC5446 /* HabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewController.swift; sourceTree = "<group>"; };
+		BC8970EE26CFD0EB00EC5446 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/SceneDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				BC8970D426CD680D00EC5446 /* AppDelegate.swift */,
-				BC8970D626CD680D00EC5446 /* SceneDelegate.swift */,
-				BC8970D826CD680D00EC5446 /* ViewController.swift */,
+				BC8970EE26CFD0EB00EC5446 /* SceneDelegate.swift */,
+				BC8970EA26CFB96A00EC5446 /* HabitsViewController.swift */,
+				BC8970EC26CFC63700EC5446 /* HabitViewController.swift */,
+				BC8970D826CD680D00EC5446 /* InfoViewController.swift */,
 				BC8970DA26CD680D00EC5446 /* Main.storyboard */,
 				BC8970DD26CD681000EC5446 /* Assets.xcassets */,
 				BC8970DF26CD681000EC5446 /* LaunchScreen.storyboard */,
 				BC8970E226CD681000EC5446 /* Info.plist */,
+				BC8970E826CFB17300EC5446 /* HabitsStore.swift */,
 			);
 			path = MyHabits;
 			sourceTree = "<group>";
@@ -137,9 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC8970D926CD680D00EC5446 /* ViewController.swift in Sources */,
+				BC8970E926CFB17300EC5446 /* HabitsStore.swift in Sources */,
+				BC8970ED26CFC63700EC5446 /* HabitViewController.swift in Sources */,
+				BC8970D926CD680D00EC5446 /* InfoViewController.swift in Sources */,
 				BC8970D526CD680D00EC5446 /* AppDelegate.swift in Sources */,
-				BC8970D726CD680D00EC5446 /* SceneDelegate.swift in Sources */,
+				BC8970EB26CFB96A00EC5446 /* HabitsViewController.swift in Sources */,
+				BC8970EF26CFD0EB00EC5446 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
