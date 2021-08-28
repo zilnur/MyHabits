@@ -16,11 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="iyF-X4-ZOx">
-                                <rect key="frame" x="127" y="390" width="159" height="126"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obk-4z-1AT">
-                                <rect key="frame" x="142.5" y="763" width="127" height="23"/>
+                                <rect key="frame" x="0.0" y="763" width="414" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="MyHabits">
                                         <attributes>
@@ -32,16 +29,16 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="iyF-X4-ZOx">
+                                <rect key="frame" x="147" y="388" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Obk-4z-1AT" secondAttribute="trailing" constant="144.5" id="590-VU-2M5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iyF-X4-ZOx" secondAttribute="trailing" constant="128" id="92G-O2-XyQ"/>
-                            <constraint firstItem="iyF-X4-ZOx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="346" id="IJp-4l-Lq8"/>
-                            <constraint firstItem="Obk-4z-1AT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142.5" id="LAZ-mY-YOk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iyF-X4-ZOx" secondAttribute="bottom" constant="346" id="QAR-Ut-Gu4"/>
-                            <constraint firstItem="iyF-X4-ZOx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="TUl-fN-d9P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Obk-4z-1AT" secondAttribute="trailing" id="590-VU-2M5"/>
+                            <constraint firstItem="Obk-4z-1AT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LAZ-mY-YOk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Obk-4z-1AT" secondAttribute="bottom" constant="76" id="YPy-9e-S8L"/>
                         </constraints>
                     </view>
